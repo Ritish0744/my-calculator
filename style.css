@@ -1,8 +1,7 @@
- body {
-        background-color: rgba(207, 209, 209, 0.37);
-      }
 
       .box {
+        box-shadow: 0px 0px 10px 3px rgba(134, 131, 131, 0.354);
+
         margin-top: 0px;
         text-align: center;
         max-width: 400px;
@@ -10,57 +9,56 @@
 
         border-radius: 10px;
         padding: 10px;
-        font-size: 2em;
+
         background-color: white;
       }
-      h1 {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 2em;
-        font-style: normal;
-        font-weight: 500;
-      }
+      .btn {
+        display: grid;
+        grid-template-columns: 40px 40px 40px 40px;
 
-      .main {
-        display: flex;
-        flex-direction: column;
-        font-family: "Times New Roman", Times, serif;
+        margin: auto;
+        row-gap: 25px;
+        column-gap: 60px;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 20px;
       }
-      .input {
-        font-size: 1.1em;
-
-        padding: 10px;
-        margin: 20px;
-        border-radius: 10px;
-        border: 0px;
-        box-shadow: 0px 0px 10px 2px rgba(185, 184, 184, 0.679);
-      }
-      #dropdown {
-        font-size: 1.1em;
-        text-align: center;
-        padding: 10px;
-        margin: 20px;
-        border-radius: 10px;
-        border: 0px;
-        box-shadow: 0px 0px 10px 2px rgba(185, 184, 184, 0.679);
-      }
-      .result {
-        font-size: 1.1em;
-      }
-
-      #submit {
-        font-size: 1.1em;
-        text-align: center;
-        padding: 10px;
-        margin: 20px;
-        border-radius: 10px;
-        border: 0px;
-        box-shadow: 0px 0px 10px 2px rgba(185, 184, 184, 0.679);
+      button {
         background-color: white;
+        box-shadow: 0px 0px 6px 1px rgba(86, 85, 85, 0.442);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 1.5em;
+        padding: 20px 30px;
+        justify-content: center;
+        justify-self: center;
+
+        transition: 0.2s ease-in-out;
       }
-      #submit:hover {
-        background-color: rgb(51, 159, 247);
-        box-shadow: 0px 0px 10px 2px rgba(185, 184, 184, 0);
+      button:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease-in-out;
       }
-      #submit:hover:active {
-        background-color: rgb(180, 215, 243);
+      button:hover:active {
+        transform: scale(0.9);
+        transition: 0.2s ease-in-out;
       }
+      .display {
+        border-radius: 10px;
+        border: 0px;
+        box-shadow: 0px 0px 10px 2px rgba(131, 130, 130, 0.367);
+        display: grid;
+        grid-template-columns: 160px;
+
+        font-size: 1.5em;
+        display: grid;
+
+        align-items: center;
+        padding: 20px;
+        width: 340px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        justify-self: center;
+        text-align: right;
+      }
+    
