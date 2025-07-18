@@ -8,35 +8,42 @@
   </head>
   <body>
     <div class="box">
-      <h1>Calculator</h1>
+      <input
+        type="text"
+        class="display"
+        id="display"
+        disabled
+        placeholder="CALCULATOR             "
+      />
 
-      <div class="main">
-        <input
-          type="number"
-          class="input"
-          id="input1"
-          placeholder="enter first number"
-        />
-        <input
-          type="number"
-          class="input"
-          id="input2"
-          placeholder="enter second number"
-        />
+      <div class="btn">
+        <button onclick="back()">
+          <img src="backspace.png" height="15px" width="15px" alt="" />
+        </button>
+        <button onclick="clr()">c</button>
+        <button onclick="op(`%`)">%</button>
+        <button onclick="op(`/`)">/</button>
 
-        <select name="" id="dropdown">
-          <option value="plus">Add (+)</option>
-          <option value="minus">Subtract (-)</option>
-          <option value="divide">Divide (/)</option>
-          <option value="multiply">Multiply (*)</option>
-        </select>
+        <button onclick="num(1)">1</button>
+        <button onclick="num(2)">2</button>
+        <button onclick="num(3)">3</button>
+        <button onclick="op(`+`)">+</button>
 
-        <button id="submit">Submit</button>
+        <button onclick="num(4)">4</button>
+        <button onclick="num(5)">5</button>
+        <button onclick="num(6)">6</button>
+        <button onclick="op(`-`)">-</button>
 
-        <div class="result" id="result">Result</div>
+        <button onclick="num(7)">7</button>
+        <button onclick="num(8)">8</button>
+        <button onclick="num(9)">9</button>
+        <button onclick="op(`*`)">*</button>
+        <button onclick="num(`.`)">.</button>
+        <button onclick="num(0)">0</button>
+        <button onclick="num(`00`)">00</button>
+        <button onclick="equal()">=</button>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
