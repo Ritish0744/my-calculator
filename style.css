@@ -31,6 +31,8 @@ body{
         border: 0px;
         border-radius: 10px;
          font-size: 3em;
+         font-style: normal;
+         font-weight: lighter;
         height:80px ;
         width:80px ;
         justify-content: center;
